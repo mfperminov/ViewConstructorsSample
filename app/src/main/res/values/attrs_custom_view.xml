@@ -1,7 +1,7 @@
 <resources>
     <declare-styleable name="CustomView">
         <attr name="exampleString" format="string" />
-        <attr name="exampleColor" format="color" />
+        <attr name="exampleTextColor" format="color" />
         <attr name="exampleDrawable" format="color|reference" />
         <attr name="defaultCustomViewStyleAttr" format="reference"/>
     </declare-styleable>

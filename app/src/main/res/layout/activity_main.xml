@@ -9,16 +9,9 @@
 
     <xyz.mperminov.viewconstructorssample.CustomView
         android:id="@+id/customView"
+        app:exampleTextColor="@color/purple_500"
         app:exampleString="@string/parent"
-        app:exampleColor="@color/purple_500"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
-
-    <xyz.mperminov.viewconstructorssample.ChildCustomView
-        android:id="@+id/childCustomView"
-        app:exampleString="@string/child"
-        app:exampleColor="@color/rose"
-        android:layout_marginTop="32dp"
+        app:exampleDrawable="@drawable/logo"
         android:layout_width="200dp"
         android:layout_height="200dp"/>
 

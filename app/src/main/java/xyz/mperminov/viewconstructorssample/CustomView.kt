@@ -30,7 +30,7 @@ open class CustomView : View {
 
     var exampleString: String = ""
 
-    var exampleColor: Int = 0
+    var exampleColor: Int = Color.MAGENTA
         set(value) {
             field = value
             textPaint.color = field
@@ -47,7 +47,7 @@ open class CustomView : View {
         attrs,
         R.attr.defaultCustomViewStyleAttr
     ) {
-        init(attrs,  0)
+        init(attrs,  R.attr.defaultCustomViewStyleAttr)
     }
 
     constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(
@@ -66,13 +66,10 @@ open class CustomView : View {
             0
         )
             .use { styledAttrs ->
-                exampleString =
-                    styledAttrs.getString(R.styleable.CustomView_exampleString).orEmpty()
-                exampleColor =
-                    styledAttrs.getColor(R.styleable.CustomView_exampleColor, exampleColor)
+                exampleString = styledAttrs.getString(R.styleable.CustomView_exampleString).orEmpty()
+                exampleColor = styledAttrs.getColor(R.styleable.CustomView_exampleTextColor, exampleColor)
                 if (styledAttrs.hasValue(R.styleable.CustomView_exampleDrawable)) {
-                    exampleDrawable =
-                        styledAttrs.getDrawable(R.styleable.CustomView_exampleDrawable)
+                    exampleDrawable = styledAttrs.getDrawable(R.styleable.CustomView_exampleDrawable)
                     exampleDrawable?.callback = this
                 }
             }
