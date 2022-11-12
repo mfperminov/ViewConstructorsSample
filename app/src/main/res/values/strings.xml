@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">View Constructors Sample</string>
+    <string name="parent">Parent</string>
+    <string name="child">Child</string>
+    <string name="danzig">I am Danzig!</string>
+</resources>

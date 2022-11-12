@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="CustomView">
+        <attr name="exampleString" format="string" />
+        <attr name="exampleColor" format="color" />
+        <attr name="exampleDrawable" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="ChildCustomView">
+        <attr name="defaultChildCustomViewStyleAttr" format="reference"/>
+    </declare-styleable>
+</resources>
