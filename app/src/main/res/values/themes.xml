@@ -12,6 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+<item name="defaultCustomViewStyleAttr">@style/Widget.Theme.ViewConstructorsSample.MyView.Red</item>
 <item name="defaultChildCustomViewStyleAttr">@style/Widget.Theme.ViewConstructorsSample.ChildCustomView</item>
     </style>
 

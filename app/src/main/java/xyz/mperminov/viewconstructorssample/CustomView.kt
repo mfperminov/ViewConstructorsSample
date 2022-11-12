@@ -42,15 +42,15 @@ open class CustomView : View {
         init(null, 0)
     }
 
-    constructor(context: Context, attrs: AttributeSet) : super(
+    constructor(context: Context, attrs: AttributeSet?) : super(
         context,
         attrs,
-        0
+        R.attr.defaultCustomViewStyleAttr
     ) {
-        init(attrs, 0)
+        init(attrs,  0)
     }
 
-    constructor(context: Context, attrs: AttributeSet, defStyle: Int) : super(
+    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(
         context,
         attrs,
         defStyle

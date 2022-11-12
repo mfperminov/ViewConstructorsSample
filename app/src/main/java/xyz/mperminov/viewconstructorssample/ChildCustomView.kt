@@ -7,10 +7,6 @@ class ChildCustomView : CustomView {
 
     constructor(context: Context) : super(context)
 
-    constructor(context: Context, attrs: AttributeSet) : super(
-        context,
-        attrs,
-        R.attr.defaultChildCustomViewStyleAttr
-    )
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
 
 }
