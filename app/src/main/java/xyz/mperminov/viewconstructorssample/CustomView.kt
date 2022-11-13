@@ -50,19 +50,19 @@ open class CustomView : View {
         init(attrs,  R.attr.defaultCustomViewStyleAttr)
     }
 
-    constructor(context: Context, attrs: AttributeSet?, defStyle: Int) : super(
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
         context,
         attrs,
-        defStyle
+        defStyleAttr
     ) {
-        init(attrs, defStyle)
+        init(attrs, defStyleAttr)
     }
 
-    private fun init(attrs: AttributeSet?, defStyle: Int) {
+    private fun init(attrs: AttributeSet?, defStyleAttr: Int) {
         context.obtainStyledAttributes(
             attrs,
             R.styleable.CustomView,
-            defStyle,
+            defStyleAttr,
             0
         )
             .use { styledAttrs ->
