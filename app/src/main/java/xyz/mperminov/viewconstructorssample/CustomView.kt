@@ -28,15 +28,15 @@ open class CustomView : View {
         color = Color.WHITE
     }
 
-    var exampleString: String = ""
+    private var exampleString: String = ""
 
-    var exampleTextColor: Int = Color.MAGENTA
+    private var exampleTextColor: Int = Color.MAGENTA
         set(value) {
             field = value
             textPaint.color = field
         }
 
-    var exampleDrawable: Drawable? = null
+    private var exampleDrawable: Drawable? = null
 
     constructor(context: Context) : super(context) {
         init(null, 0)
@@ -78,10 +78,6 @@ open class CustomView : View {
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
-        val paddingLeft = paddingLeft
-        val paddingTop = paddingTop
-        val paddingRight = paddingRight
-        val paddingBottom = paddingBottom
         contentWidth = w - paddingLeft - paddingRight
         contentHeight = h - paddingTop - paddingBottom
     }
