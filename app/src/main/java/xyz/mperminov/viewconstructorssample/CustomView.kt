@@ -30,7 +30,7 @@ open class CustomView : View {
 
     var exampleString: String = ""
 
-    var exampleColor: Int = Color.MAGENTA
+    var exampleTextColor: Int = Color.MAGENTA
         set(value) {
             field = value
             textPaint.color = field
@@ -67,13 +67,13 @@ open class CustomView : View {
         )
             .use { styledAttrs ->
                 exampleString = styledAttrs.getString(R.styleable.CustomView_exampleString).orEmpty()
-                exampleColor = styledAttrs.getColor(R.styleable.CustomView_exampleTextColor, exampleColor)
+                exampleTextColor = styledAttrs.getColor(R.styleable.CustomView_exampleTextColor, exampleTextColor)
                 if (styledAttrs.hasValue(R.styleable.CustomView_exampleDrawable)) {
                     exampleDrawable = styledAttrs.getDrawable(R.styleable.CustomView_exampleDrawable)
                     exampleDrawable?.callback = this
                 }
             }
-        textPaint.color = exampleColor
+        textPaint.color = exampleTextColor
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
