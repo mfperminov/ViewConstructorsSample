@@ -12,7 +12,7 @@
         app:exampleTextColor="@color/purple_500"
         app:exampleString="@string/parent"
         app:exampleDrawable="@drawable/logo"
-        android:layout_width="200dp"
-        android:layout_height="200dp"/>
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
 
 </LinearLayout>

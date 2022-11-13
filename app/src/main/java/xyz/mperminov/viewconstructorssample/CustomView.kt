@@ -10,7 +10,7 @@ import android.text.TextPaint
 import android.util.AttributeSet
 import android.view.View
 
-private const val TEXT_SIZE = 50f
+private const val TEXT_SIZE = 100f
 
 open class CustomView : View {
 
